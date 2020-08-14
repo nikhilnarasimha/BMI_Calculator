@@ -2,7 +2,7 @@
 
 <head>
 
-    <title>Nikhil's BMI calculator</title>
+    <title style="color:#6666ff">Nikhil's BMI calculator</title>
     <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/pure-min.css" integrity="sha384-cg6SkqEOCV1NbJoCu11+bm0NvBRc8IYLRGXkmNrqUBfTjmMYwNKPWBTIKyw9mHNJ" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href= '{{url_for("static", filename = "style.css")}}'>
 
@@ -11,7 +11,7 @@
 <h1>BMI Calculator</h1>
 
 
-<body>
+<body style="background-color:rgb(239, 239, 245);">
       <div class="main">
       <form class="pure-form" method="POST" action="/">
       Enter your weight in Kgs:<br>
@@ -27,7 +27,7 @@
       
       <div class="main">
            {% if bmi %}
-                <p> Your BMI is {{ bmi }} </p>
+                <p style="color:#0073e6;font-size:20px;"><strong> Your BMI is {{ bmi }} </strong> </p>
            {% endif %}
       
       </div>
@@ -35,3 +35,107 @@
 
 </body>
 
+<br>
+
+<br>
+
+<br>
+
+<table class="pure-table" style="float: left;"  width=50%>
+    <thead>
+        <tr>
+            
+            <th style="background-color:#b3b3b3">You're</th>
+            <th style="background-color:#b3b3b3">When</th>
+            <th style="background-color:#b3b3b3">BMI Score</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr class="pure-table-odd">
+            
+            <td>Underweight </td>
+            <td>Less than</td>
+            <td>18.5</td>
+        </tr>
+        <tr>
+            
+            <td><strong>Normal weight</strong></td>
+            <td><strong>Between</strong></td>
+            <td><strong>18.5–24.9</strong></td>
+        </tr>
+        <tr class="pure-table-odd">
+            
+            <td>Overweight</td>
+            <td>Between</td>
+            <td>25–29.9</td>
+        </tr>
+		<tr>
+            
+            <td><strong>Obesity</strong></td>
+            <td><strong>More than</strong></td>
+            <td><strong>30</strong></td>
+        </tr>
+    </tbody>
+</table >
+<table class="pure-table" width=50%>
+    <thead>
+        <tr>
+            <th style="background-color:#b3b3b3">FT in</th>
+            <th style="background-color:#b3b3b3">Centimeters</th>
+            <th style="background-color:#b3b3b3">FT in</th>
+            <th style="background-color:#b3b3b3">Centimeters</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr class="pure-table-odd">
+            <td>5’0</td>
+            <td>152.40cm</td>
+            <td>5’8</td>
+            <td>172.72cm</td>
+        </tr>
+        <tr>
+            <td><strong>5’1</strong></td>
+            <td><strong>154.94cm</strong></td>
+            <td><strong>5’9</strong></td>
+            <td><strong>175.26cm</strong></td>
+        </tr>
+        <tr class="pure-table-odd">
+            <td>5’2</td>
+            <td>157.48cm</td>
+            <td>5’10</td>
+            <td>177.80cm</td>
+        </tr>
+        <tr>
+            <td><strong>5’3</strong></td>
+            <td><strong>160.02cm</strong></td>
+			<td><strong>5’11</strong></td>
+            <td><strong>180.34cm</strong></td>
+          
+        </tr>
+        <tr class="pure-table-odd">
+            <td>5’4</td>
+            <td>162.56cm</td>
+            <td>6’0</td>
+            <td>182.88cm</td>
+        </tr>
+        <tr>
+            <td><strong>5’5</strong></td>
+            <td><strong>165.10cm</strong></td>
+            <td><strong>6’1</strong></td>
+            <td><strong>185.45cm</strong></td>
+        </tr>
+        <tr class="pure-table-odd">
+            <td>5’6</td>
+            <td>167.74cm</td>
+            <td>6’2</td>
+            <td>187.96cm</td>
+        </tr>
+        <tr>
+            <td><strong>5’7</strong></td>
+            <td><strong>170.18cm</strong></td>
+			<td><strong>6’3</strong></td>
+            <td><strong>190.50cm</strong></td>
+           
+        </tr>
+    </tbody>
+</table>
